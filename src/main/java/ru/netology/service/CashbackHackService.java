@@ -4,7 +4,7 @@ public class CashbackHackService {
     private final int boundary = 1000;
 
     public int remain(int amount) {
-        return boundary - amount % boundary;
+        return boundary - amount % boundary; //целый остаток от деления, если меньше единицы - то amount
     }
 }
    // кешбек начисляется за каждую потраченную полную тысячу рублей, поэтому, если вы покупаете что-то на 900 рублей,
