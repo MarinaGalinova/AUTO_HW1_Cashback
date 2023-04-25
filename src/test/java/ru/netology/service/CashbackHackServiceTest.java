@@ -1,14 +1,14 @@
+package ru.netology.service;
+
 import org.junit.Assert;
 import org.junit.Test;
-import ru.netology.service.CashbackHackService;
 
+import static org.junit.Assert.*;
 
 public class CashbackHackServiceTest {
-    CashbackHackService service = new CashbackHackService();
-
 
     @Test
-   public void SpentUnder1000() {
+    public void SpentUnder1000() {
 // подготовка
         CashbackHackService service = new CashbackHackService();
         int amount = 900;
