@@ -3,13 +3,11 @@ package ru.netology.service;
 import org.junit.Assert;
 import org.junit.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
-
     public class CashbackHackServiceTest {
         CashbackHackService service = new CashbackHackService();
 
         @org.junit.Test
-        public void SpentUnder1000() {
+        public void spentUnder1000() {
 // подготовка
             CashbackHackService service = new CashbackHackService();
             int amount = 900;
@@ -21,7 +19,7 @@ import static org.junit.jupiter.api.Assertions.*;
         }
 
         @org.junit.Test
-        public void Spent1000() {
+        public void spent1000() {
             CashbackHackService service = new CashbackHackService();
             int amount = 1000;
             int actual = service.remain(amount);
@@ -31,7 +29,7 @@ import static org.junit.jupiter.api.Assertions.*;
         }
 
         @org.junit.Test
-        public void SpentOver1000() {
+        public void spentOver1000() {
             CashbackHackService service = new CashbackHackService();
             int amount = 1100;
             int actual = service.remain(amount);
@@ -41,7 +39,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
         }
         @Test
-        public void Spent0() {
+        public void spent0() {
             CashbackHackService service = new CashbackHackService();
             int amount = 0;
             int actual = service.remain(amount);
